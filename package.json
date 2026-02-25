@@ -1,6 +1,6 @@
 {
   "name": "@forgedevstack/kiln",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Component documentation and showcase tool. A lightweight, blazing-fast Storybook alternative for ForgeStack.",
   "type": "module",
   "publishConfig": {
