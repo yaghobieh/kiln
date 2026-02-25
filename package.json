@@ -71,8 +71,9 @@
   ],
   "author": "John Yaghobieh",
   "license": "MIT",
+  "homepage": "https://forgedevstack.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AY-Space/forgestack.git"
+    "url": "https://github.com/yaghobieh/kiln"
   }
 }
