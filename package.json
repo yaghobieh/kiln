@@ -1,0 +1,78 @@
+{
+  "name": "@forgedevstack/kiln",
+  "version": "1.0.4",
+  "description": "Component documentation and showcase tool. A lightweight, blazing-fast Storybook alternative for ForgeStack.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "kiln": "./dist/cli/index.js"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./react": {
+      "import": "./dist/react/index.js",
+      "require": "./dist/react/index.cjs",
+      "types": "./dist/react/index.d.ts"
+    },
+    "./cli": {
+      "import": "./dist/cli/index.js",
+      "types": "./dist/cli/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && chmod +x ./dist/cli/index.js",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx",
+    "example": "vite --config vite.config.example.ts"
+  },
+  "peerDependencies": {
+    "@forgedevstack/forge-compass": ">=1.0.0",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.2",
+    "prism-react-renderer": "^2.3.0"
+  },
+  "devDependencies": {
+    "@forgedevstack/forge-compass": "^1.0.2",
+    "@types/node": "^22.10.7",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.7",
+    "vite-plugin-dts": "^4.4.0"
+  },
+  "keywords": [
+    "react",
+    "storybook",
+    "documentation",
+    "components",
+    "forge",
+    "kiln",
+    "showcase"
+  ],
+  "author": "John Yaghobieh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AY-Space/forgestack.git"
+  }
+}

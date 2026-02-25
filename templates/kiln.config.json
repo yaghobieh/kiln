@@ -1,0 +1,21 @@
+{
+  "title": "My Component Library",
+  "description": "Component documentation powered by Kiln",
+  "logo": "default",
+  "theme": "light",
+  "primaryColor": "#6366f1",
+  "stories": [
+    "src/**/*.story.tsx",
+    "src/**/*.stories.tsx",
+    "src/**/*.kiln.tsx"
+  ],
+  "port": 6006,
+  "showCodeDefault": false,
+  "testing": true,
+  "breakpoints": [
+    { "id": "mobile", "label": "Mobile", "width": 375, "icon": "mobile", "isDefault": true },
+    { "id": "tablet", "label": "Tablet", "width": 768, "icon": "tablet", "isDefault": true },
+    { "id": "desktop", "label": "Desktop", "width": 1280, "icon": "desktop", "isDefault": true }
+  ],
+  "allowCustomBreakpoints": true
+}
